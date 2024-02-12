@@ -1,0 +1,42 @@
+/*
+	===============================
+			@Import	Function
+	===============================
+*/
+/*
+	===============================
+			@Import	Mixins
+	===============================
+*/
+  div#load_screen {
+      background: #fff;
+      opacity: 0.9;
+      position: fixed;
+      z-index: 999999;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    div#load_screen .loader {
+      width: 60px;
+      height: 60px;
+      border: 6px solid rgba(0, 0, 0, 0.1);
+      border-top-color: #f39022;
+      border-radius: 50%;
+      animation: spin 1s infinite linear;
+    }
+    
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
